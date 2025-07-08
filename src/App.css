@@ -6,36 +6,48 @@ body {
 
 /* Header */
 .header {
-  justify-items: center;
-  text-align: center;
-  position: fixed;
+  position:sticky;
   top: 0;
   width: 100%;
   background-color: #333;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   z-index: 1000;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-link {
+  font-family: 'Times New Roman', Times, serif;
   color: white;
-  margin: 0 1rem;
   cursor: pointer;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  text-decoration-style: solid;
 }
+
 
 /* Sections */
 .section {
   padding-top: 120px;
   padding-bottom: 80px;
   text-align: center;
-  background-color: inherit; /* Let sections inherit their bg */
+  background-color: inherit;
   position: relative;
 }
 
@@ -43,9 +55,13 @@ body {
 .home-section {
   width: 100%;
   margin: 0;
-  background-color: #f9f9f9;
-  height: 100vh;
-  overflow: hidden;
+  background-color: #ffffff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-img {
@@ -55,6 +71,7 @@ body {
   border-radius: 50%;
   margin-top: 20px;
   object-fit: cover;
+  border: 10px solid #333;
 }
 
 /* About Section */
@@ -62,8 +79,12 @@ body {
   width: 100%;
   margin: 0;
   background-color: #eaeaea;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cards {
@@ -77,10 +98,10 @@ body {
   width: 100%;
   max-width: 210px;
   max-height: 210px;
-  aspect-ratio: 1 / 1;      /* Keeps width:height = 1:1 */
+  aspect-ratio: 1 / 1;
   border-radius: 4%;
   margin-top: 20px;
-  object-fit: cover;        /* Crops to fill the box */
+  object-fit: cover;
   display: block;
 }
 
@@ -138,7 +159,7 @@ body {
 .footer {
   justify-items: center;
   text-align: center;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
   background-color: #333;
@@ -148,7 +169,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 
 .social-links {
   display: flex;
@@ -169,5 +189,5 @@ body {
 .footer-icon {
   width: 32px;
   height: 32px;
-  filter: brightness(0) invert(1); /* Makes Jobs180 icon white on dark bg */
+  filter: brightness(0) invert(1);
 }
