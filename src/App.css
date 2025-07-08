@@ -136,14 +136,38 @@ body {
 
 
 .footer {
+  justify-items: center;
+  text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #333;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   z-index: 1000;
   display: flex;
   justify-content: center;
+}
+
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.social-links a {
   color: white;
-  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #00aced;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1); /* Makes Jobs180 icon white on dark bg */
 }
