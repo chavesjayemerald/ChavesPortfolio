@@ -14,7 +14,9 @@
     "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.6.3"
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^7.6.3",
+    "react-scroll": "^1.9.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",

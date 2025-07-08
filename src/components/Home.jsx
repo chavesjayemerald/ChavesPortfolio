@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom'
-
 export default function Home() {
   return (
-    <div style={{ padding: '20px' }}>
+    <section id="home" className="section home-section">
       <h1>Welcome to My Portfolio</h1>
-      <p>This is the homepage of Chaves' portfolio site.</p>
-    </div>
-  )
+      <p>This is the introduction.</p>
+      <img src="./public/images/profile.jpg" alt="Profile" className="profile-img" />
+    </section>
+  );
 }
