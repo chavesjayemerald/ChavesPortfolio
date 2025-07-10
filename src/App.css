@@ -68,11 +68,11 @@ body {
 .profile-img {
   width: 100%;
   max-width: 300px;
-  min-height: 300px;
+  max-height: 300px;
   border-radius: 50%;
   margin-top: 20px;
   object-fit: cover;
-  border: 10px solid #333;
+  border: 10px solid #181818;
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
@@ -116,11 +116,11 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.6);
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: transform 0.15s;
 }
 
 .about-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.30);
 }
 
 /* Modal */
@@ -139,7 +139,9 @@ body {
   background: white;
   padding: 2rem;
   border-radius: 10px;
-  width: 300px;
+  min-width: 100px;
+  width: 500px;
+  max-height: 1000px;
   text-align: left;
 }
 
@@ -189,7 +191,7 @@ body {
 }
 
 .footer-icon {
-  width: 32px;
-  height: 32px;
+  width: 13px;
+  height: 13px;
   filter: brightness(0) invert(1);
 }

@@ -1,10 +1,10 @@
-export default function AboutEducation({ onClose }) {
+export default function AboutCertificates({ onClose }) {
   return (
     <div className="modal-overlay">
       <div className="modal">
-        <h2>Education</h2>
+        <h2>Certificates</h2>
         <ul>
-          <li><strong>Education:</strong> Bachelor of Science in Information Techonlogy</li>
+          <li><strong>Yes:</strong> Hai!</li>
         </ul>
         <button onClick={onClose} className="modal-close-btn">Close</button>
       </div>
