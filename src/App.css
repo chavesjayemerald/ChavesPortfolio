@@ -133,27 +133,34 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  padding: 1rem; /* Prevent edge-cutoff on small screens */
+  box-sizing: border-box;
+}
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100vh;
 }
 
 .modal {
   background: white;
   border-radius: 10px;
-  min-width: 100px;
   width: 90%;
   max-width: 500px;
-  max-height: 90vh; /* Use viewport height for better responsiveness */
-  overflow-y: auto;  /* Enables vertical scrolling */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   box-sizing: border-box;
 }
 
-/* Chrome, Edge, Safari */
 .modal::-webkit-scrollbar {
   display: none;
 }
@@ -163,12 +170,14 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 100px;
+  border-bottom: 1px solid #ccc;
 }
 
 .modal-close-btn {
   margin-top: 1rem;
-  padding: 0.5rem 0.5rem;
-  background-color: #333;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
   color: white;
   border: none;
   border-radius: 5px;
@@ -180,14 +189,15 @@ body {
 }
 
 .education-img {
-  width: 100%;
+  width: 90%;
   max-width: 420px;
-  height: auto;
+  max-height: 200px;
   border-radius: 4%;
-  margin: 20px auto 0 auto;
   object-fit: cover;
   display: block;
+  margin-top: 50px;
 }
+
 
 .footer {
   justify-items: center;
