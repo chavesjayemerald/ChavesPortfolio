@@ -12,7 +12,7 @@ export default function AboutMe() {
 
     return (
         <section id="about" className="section about-section">
-            <h1>About Me</h1>
+            <h1>ABOUT ME</h1>
             <div className="cards">
                 <div>
                     <div className="about-card" onClick={() => setShowEducationModal(true)}>

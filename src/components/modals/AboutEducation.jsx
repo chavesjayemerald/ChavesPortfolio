@@ -4,7 +4,7 @@ export default function AboutEducation({ onClose }) {
   const modalRef = useRef(null);
 
   const handleMouseEnter = () => {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = '';
   };
 
   const handleMouseLeave = () => {
